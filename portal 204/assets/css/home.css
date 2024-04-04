@@ -196,6 +196,131 @@ body {
     align-items: center;
 }
 
+.containerAtvdEProvas{
+    background-color: white;
+    height: 990px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.atvTitle{
+    margin: 40px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.painelAtvEProvas{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.containerHorario {
+    background-color: #003459;
+    height: 500px;
+}
+
+.painelAtvEProva{
+    background-image:linear-gradient(to top, #001a7f, #008dd3 ) ;
+    border-radius: 20px;
+    width: 225px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.verMaisBtn{
+    background-image:linear-gradient(to top, #001a7f, #008dd3 ) ;
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 40px;
+    transition: all 0.5s ease;
+}
+.verMaisBtn:hover{
+    opacity:0.7 ;
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.containerQuiz{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.painelQuiz{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.h1Quiz {
+    text-align: center;
+}
+.quizBtn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: #08A8FF;
+    transition: all 0.5s ease;
+}
+
+.quizBtn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+.containerColaboradores{
+    background-color: #07a2ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.painelColaboradores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.painelColaborador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.nomeColaborador{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.funcaoColaborador{
+    color: rgb(62, 62, 62);
+    margin: 0;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.imgColaborador{
+    width: 120px;
+    height: 120px;
+}
+.colaboradoresTitle{
+    color: #fff;
+    font-weight: lighter;
+}
 @media (min-width: 1024px) {
     .bannerHeader {
         display: flex;
@@ -259,5 +384,33 @@ body {
     .painelAvisos .painelAviso {
         width: 250px;
         height: 250px;
+    }
+    .containerAtvdEProvas {
+        height: 450px;
+        display: flex;
+        align-items: center;
+    }
+    .painelAtvEProvas {
+        flex-direction: row;
+        gap: 150px;
+        max-width: 980px; 
+    }
+    .painelAtvEProvas .painelAtvEProva {
+        width: 250px;
+        height: 250px; 
+    }
+    .verMaisBtn{
+        width: 200px;
+        height: 50px;
+        font-size: 15pxs;
+    }
+    .quizBtn{
+        height: 60px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .painelColaboradores {
+        flex-direction:row;
+        gap: 100px;
     }
 }
