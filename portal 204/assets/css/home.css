@@ -147,7 +147,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .infoSala h1 {
@@ -163,6 +162,7 @@ body {
     text-align: center;
     font-size: 16px;
     line-height: 21px;
+    margin-bottom: 30px;
 }
 
 .containerAvisos {
