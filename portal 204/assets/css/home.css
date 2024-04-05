@@ -217,11 +217,6 @@ body {
 
 }
 
-.containerHorario {
-    background-color: #003459;
-    height: 500px;
-}
-
 .painelAtvEProva{
     background-image:linear-gradient(to top, #001a7f, #008dd3 ) ;
     border-radius: 20px;
@@ -321,6 +316,67 @@ body {
     color: #fff;
     font-weight: lighter;
 }
+
+.containerHorario {
+    background-color: #003459;
+    height: 825px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerHorario h1 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.containerHorario p {
+    text-align: center;
+    color: #eee;
+}
+
+.containerHorario small {
+    text-align: center;
+    color: #eee;
+    font-style: italic;
+}
+
+.horarioDesktop {
+    display: none;
+}
+
+.segundaHorario,
+.tercaHorario,
+.quartaHorario,
+.quintaHorario,
+.sextaHorario {
+    display: none;
+    height: 500px;
+    width: 100px;
+}
+
+.show {
+    display: table;
+}
+
+.moreBtn {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 45px;
+    width: 140px;
+    background-color: #08A8FF;
+    transition: all 0.5s ease;
+}
+
+.moreBtn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
 @media (min-width: 1024px) {
     .bannerHeader {
         display: flex;
@@ -412,5 +468,21 @@ body {
     .painelColaboradores {
         flex-direction:row;
         gap: 100px;
+    }
+    .show {
+        display: none;
+    }
+    .horarioDesktop {
+        display: table;
+    }
+    .horarioImg {
+        width: 980px;
+        height: 500px;
+    }
+    .moreBtn {
+        display: none;
+    }
+    .containerHorario {
+        height: 670px;
     }
 }
