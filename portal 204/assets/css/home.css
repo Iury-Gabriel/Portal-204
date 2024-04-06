@@ -142,10 +142,6 @@ body {
 }
 
 .containerInfoSala {
-    background-image: url('../images/infosala.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-color: #FAFBFC;
 }
 
@@ -456,6 +452,10 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-image: url('../images/infosala.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     .infoSala {
         max-width: 980px;
