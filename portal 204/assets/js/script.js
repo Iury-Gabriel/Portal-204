@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (diaDaSemana === 5) {
             sextaHorario.classList.add('show');
         } else {
-            console.log('Erro ao verificar o dia da semana');
+            segundaHorario.classList.add('show');
         }
     }
 
