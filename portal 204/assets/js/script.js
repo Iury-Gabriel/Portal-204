@@ -21,17 +21,38 @@ document.addEventListener('DOMContentLoaded', function () {
     function verificarDia() {
         const dataAtual = new Date();
         const diaDaSemana = dataAtual.getDay();
+        const horaAtual = dataAtual.getHours();
 
         if (diaDaSemana === 1) {
-            segundaHorario.classList.add('show');
+            if (horaAtual >= 0 && horaAtual <= 17) {
+                segundaHorario.classList.add('show');
+            } else {
+                tercaHorario.classList.add('show');
+            }
         } else if (diaDaSemana === 2) {
-            tercaHorario.classList.add('show');
+            if (horaAtual >= 0 && horaAtual <= 17) {
+                tercaHorario.classList.add('show');
+            } else {
+                quartaHorario.classList.add('show');
+            }
         } else if (diaDaSemana === 3) {
-            quartaHorario.classList.add('show');
+            if (horaAtual >= 0 && horaAtual <= 17) {
+                quartaHorario.classList.add('show');
+            } else {
+                quintaHorario.classList.add('show');
+            }
         } else if (diaDaSemana === 4) {
-            quintaHorario.classList.add('show');
+            if (horaAtual >= 0 && horaAtual <= 17) {
+                quintaHorario.classList.add('show');
+            } else {
+                sextaHorario.classList.add('show');
+            }
         } else if (diaDaSemana === 5) {
-            sextaHorario.classList.add('show');
+            if (horaAtual >= 0 && horaAtual <= 17) {
+                sextaHorario.classList.add('show');
+            } else {
+                segundaHorario.classList.add('show');
+            }
         } else {
             segundaHorario.classList.add('show');
         }

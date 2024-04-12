@@ -251,6 +251,11 @@ body {
     transform: scale(1.10);
 }
 
+.verMaisBtn a {
+    text-decoration: none;
+    color: white;
+}
+
 .containerQuiz{
     background-color: white;
     display: flex;
@@ -290,6 +295,12 @@ body {
     cursor: pointer;
     transform: scale(1.08);
 }
+
+.quizBtn a {
+    text-decoration: none;
+    color: black;
+}
+
 .containerColaboradores{
     background-color: #07a2ff;
     display: flex;
@@ -394,6 +405,11 @@ body {
     opacity: 0.7;
     cursor: pointer;
     transform: scale(1.08);
+}
+
+.moreBtn a {
+    text-decoration: none;
+    color: black;
 }
 
 .footer {

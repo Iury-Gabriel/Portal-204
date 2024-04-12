@@ -1,3 +1,5 @@
+
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -104,6 +106,77 @@ body {
 .navBarMobile ul li a:hover {
     opacity: 0.5;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom: 20px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background-color: #317FB6;
+    color: white;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background-color: #f2f2f2;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion .contentBx.active .content {
+    height: 100%;
+    max-height: 400px;
+    padding: 10px;
+}
+
+.content .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .title strong {
+    margin-right: 40px;
+}
+
+.content .title p {
+    margin: 0;
+}
+
 
 /* Fim Header */
 
