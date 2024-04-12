@@ -42,6 +42,11 @@ body {
     display: none;
 }
 
+.navBarDesktop ul li a.active,
+.navBarMobile ul li a.active {
+    opacity: 0.5;
+}
+
 .navBar img.fecharIcon {
     width: 35px;
     height: 35px;
@@ -141,8 +146,11 @@ body {
     text-align: center;
 }
 
+.containerInfoSala {
+    background-color: #FAFBFC;
+}
+
 .infoSala {
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,9 +264,17 @@ body {
     align-items: center;
 
 }
+
 .h1Quiz {
     text-align: center;
+    font-weight: lighter;
+    margin: 20px;
 }
+
+.pQuiz {
+    text-align: center;
+}
+
 .quizBtn{
     margin-top: 10px;
     margin-bottom: 20px;
@@ -280,6 +296,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
 }
 .painelColaboradores{
     display: flex;
@@ -287,6 +304,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    gap: 10px;
 }
 .painelColaborador{
     display: flex;
@@ -378,6 +396,28 @@ body {
     transform: scale(1.08);
 }
 
+.footer {
+    background-color: #00171f;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer .footerText {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.footer .footerColaboradores {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
 @media (min-width: 1024px) {
     .bannerHeader {
         display: flex;
@@ -412,11 +452,15 @@ body {
     .navBar ul li a:hover {
         opacity: 0.5;
     }
-    .container {
+    .containerInfoSala {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-image: url('../images/infosala.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     .infoSala {
         max-width: 980px;
@@ -462,13 +506,13 @@ body {
         font-size: 15pxs;
     }
     .quizBtn{
-        height: 60px;
-        width: 150px;
-        font-size: 20px;
+        height: 50px;
+        width: 140px;
+        font-size: 17px;
     }
     .painelColaboradores {
         flex-direction:row;
-        gap: 100px;
+        gap: 250px;
     }
     .show {
         display: none;

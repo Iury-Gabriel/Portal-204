@@ -1,0 +1,144 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.bannerHeader {
+    height: 10vh;
+    background-color: #317FB6;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #317FB6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBarDesktop ul li a.active,
+.navBarMobile ul li a.active {
+    opacity: 0.5;
+}
+
+
+.logo {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.navBar img.menuIcon {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.navBar img.inactive {
+    display: none;
+}
+
+.navBar img.fecharIcon {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.navBarDesktop {
+    display: none;
+}
+
+.navBarMobile {
+    background-color: white;
+    position: absolute;
+    top: 69px; 
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height 1s ease;
+    z-index: 1000;
+    background-color: #317FB6;
+}
+
+.activeFecharIcon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.navBarMobile.active {
+    max-height: 500px;
+}
+
+.navBarMobile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navBarMobile ul li {
+    padding: 10px;
+}
+
+.navBarMobile ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navBarMobile ul li a:hover {
+    opacity: 0.5;
+}
+
+/* Fim Header */
+
+@media (min-width: 1024px) {
+    .bannerHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header {
+        max-width: 1024px;
+    }
+    .navBar img.menuIcon {
+        display: none;
+    }
+    .bannerText h1 {
+        font-size: 50px;
+    }
+    .navBarDesktop {
+        display: flex;
+    }
+    .navBar ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+    }
+    .navBar ul li {
+        padding: 10px;
+    }
+    .navBar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .navBar ul li a:hover {
+        opacity: 0.5;
+    }
+}
