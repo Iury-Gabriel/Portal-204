@@ -25,7 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
         menuIcon.classList.remove('inactive');
         fecharIcon.classList.remove('activeFecharIcon');
         fecharIcon.classList.add('fecharIcon');
-    }); 
+    });
+    
+    const accordion = document.getElementsByClassName('contentBx');
+
+    for (let i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    }
 });
 
 
