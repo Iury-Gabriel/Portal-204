@@ -10,13 +10,13 @@ body {
 
 .bannerHeader {
     height: 100vh;
-    background-color: #317FB6;
+    background-color: #00a7e1;
 }
 
 .header {
     width: 100%;
     height: 10vh;
-    background-color: #317FB6;
+    background-color: #00a7e1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -174,7 +174,7 @@ body {
 }
 
 .containerAvisos {
-    background-color: #08A8FF;
+    background-color: #007ea7;
     height: 925px;
     display: flex;
     align-items: center;
@@ -236,7 +236,7 @@ body {
 
 }
 .verMaisBtn{
-    background-image:linear-gradient(to top, #001a7f, #008dd3 ) ;
+    background-image:linear-gradient(to top, #01435F, #247ba0 ) ;
     color: white;
     border-radius: 20px;
     margin-top: 30px;
@@ -286,7 +286,7 @@ body {
     border-radius: 20px;
     height: 40px;
     width: 120px;
-    background-color: #08A8FF;
+    background-color: #bcd2ee;
     transition: all 0.5s ease;
 }
 
@@ -397,7 +397,7 @@ body {
     border-radius: 20px;
     height: 45px;
     width: 140px;
-    background-color: #08A8FF;
+    background-color: #bcd2ee;
     transition: all 0.5s ease;
 }
 
