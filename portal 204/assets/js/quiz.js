@@ -71,12 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function opcaoSelecionada(e) {
+        document.querySelectorAll(".opcoes .opcao").forEach(item => {
+            item.removeEventListener('click', opcaoSelecionada);
+        });
+    
         let opcao = parseInt(e.target.getAttribute("data-op"));
         if(questions[questaoAtual].answer == opcao) {
             questoesCorretas++;
-            document.querySelector(`#op${opcao}`).classList.add("correta");
+            document.querySelector(`#op${opcao}`).style.backgroundColor = "#0d630d";
         } else {
-            document.querySelector(`#op${opcao}`).classList.add("errada");
+            document.querySelector(`#op${opcao}`).style.backgroundColor = "crimson";
         }
     
         questaoAtual++;
