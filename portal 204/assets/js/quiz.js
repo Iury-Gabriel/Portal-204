@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector(".containerQuestao").style.display = 'block';
             document.querySelector(".titleQuestion").innerHTML = `Questão ${questaoAtual + 1} de ${questions.length}`;
 
-            document.querySelector(".btnConfirmar").style.display = "block";
 
             document.querySelector(".questao").innerHTML = questao.question;
 
@@ -66,12 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    document.querySelector(".btnConfirmar").addEventListener('click', avancarQuiz);
-
-    function avancarQuiz() {
-        carregarQuestao();
-    }
-
     function opcaoSelecionada(e) {
         let opcao = parseInt(e.target.getAttribute("data-op"));
         if(questions[questaoAtual].answer == opcao) {
@@ -82,11 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     
         questaoAtual++;
-        let opcoes = document.querySelectorAll(".opcoes .opcao");
-        // Desativa os event listeners após selecionar uma opção
-        opcoes.forEach(item => {
-            item.removeEventListener('click', opcaoSelecionada);
-        });
+        setTimeout(carregarQuestao, 2000);
     }
 
     function finishQuiz() {
