@@ -44,12 +44,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.querySelector(".scoreArea").style.display = 'none';
             document.querySelector(".containerQuestao").style.display = 'block';
+            document.querySelector(".titleQuestion").innerHTML = `Questão ${questaoAtual + 1} de ${questions.length}`;
+
+            document.querySelector(".btnConfirmar").style.display = "block";
 
             document.querySelector(".questao").innerHTML = questao.question;
 
             let optionsHtml = "";
             for(let i in questao.options) {
-                optionsHtml += `<div data-op="${i}" class="opcao"><span>${parseInt(i)+1}</span>${questao.options[i]}</div>`;
+                optionsHtml += `<div id="op${i}" data-op="${i}" class="opcao"><span>${parseInt(i)+1}</span>${questao.options[i]}</div>`;
             }
 
             document.querySelector(".opcoes").innerHTML = optionsHtml;
@@ -73,9 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
         let opcao = parseInt(e.target.getAttribute("data-op"));
         if(questions[questaoAtual].answer == opcao) {
             questoesCorretas++;
+            document.querySelector(`#op${opcao}`).classList.add("correta");
+        } else {
+            document.querySelector(`#op${opcao}`).classList.add("errada");
         }
-
+    
         questaoAtual++;
+        let opcoes = document.querySelectorAll(".opcoes .opcao");
+        // Desativa os event listeners após selecionar uma opção
+        opcoes.forEach(item => {
+            item.removeEventListener('click', opcaoSelecionada);
+        });
     }
 
     function finishQuiz() {
@@ -97,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.querySelector(".scoreArea").style.display = 'block';
         document.querySelector(".containerQuestao").style.display = 'none';
+        document.querySelector(".btnConfirmar").style.display = "none";
         document.querySelector(".barraDeProgresso").style.width = '100%';
     }
 

@@ -1,11 +1,11 @@
 let questions = [
     {
-        question: 'Em qual elemento HTML nós colocamos o javascript?',
+        question: '(Enem/2018) Em Beirute, no Líbano, quando perguntado sobre onde se encontram os refugiados sírios, a resposta do homem é imediata: “em todos os lugares e em lugar nenhum”. Andando ao acaso, não é raro ver, sob um prédio ou num canto de calçada, ao abrigo do vento, uma família refugiada em volta de uma refeição frugal posta sobre jornais como se fossem guardanapos. Também se vê de vez em quando uma tenda com a sigla ACNUR (Alto Comissariado das Nações Unidas para Refugiados), erguida em um dos raros terrenos vagos da capital.',
         options: [
-            'tag js',
-            'tag script',
-            'tag scripting',
-            'tag javascript'
+            'migração massiva de pessoas atingidas por catástrofe natural.',
+            'hibridização cultural de grupos caracterizados por homogeneidade social.',
+            'desmobilização voluntária de militantes cooptados por seitas extremistas.',
+            'desmobilização voluntária de militantes cooptados por seitas extremistas.'
         ],
         answer: 1
     },
