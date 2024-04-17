@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let optionsHtml = "";
             for(let i in questao.options) {
-                optionsHtml += `<div id="op${i}" data-op="${i}" class="opcao"><span>${parseInt(i)+1}</span>${questao.options[i]}</div>`;
+                optionsHtml += `<div id="op${i}" data-op="${i}" class="opcao"><span>${numeroParaLetra(parseInt(i))}</span>${questao.options[i]}</div>`;
             }
 
             document.querySelector(".opcoes").innerHTML = optionsHtml;
@@ -65,6 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function numeroParaLetra(numero) {
+        
+        return String.fromCharCode(65 + numero);
+    }
+
     function opcaoSelecionada(e) {
         let opcao = parseInt(e.target.getAttribute("data-op"));
         if(questions[questaoAtual].answer == opcao) {
@@ -75,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     
         questaoAtual++;
-        setTimeout(carregarQuestao, 2000);
+        setTimeout(carregarQuestao, 1500);
     }
 
     function finishQuiz() {
