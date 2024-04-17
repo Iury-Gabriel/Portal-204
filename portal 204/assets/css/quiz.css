@@ -149,6 +149,10 @@ body {
 .containerQuestao{
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .questao{
     color: black;
@@ -182,8 +186,8 @@ body {
     border-radius: 50%;
     margin-left:5px ;
     margin-right:10px ;
-    background-color: rgba(0,0,0,0.8);
-    color: #555;
+    background-color: rgba(0,0,0,0.4);
+    color: #111;
 }
 .opcao:hover{
     background-color: rgba(0,0,0,0.2);
@@ -212,6 +216,20 @@ body {
     font-size: 16px;
     margin-bottom: 10px;  
 }
+
+.btnConfirmar{
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btnConfirmar:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
 .btnReiniciar{
     border: 0;
     border-radius: 10px;

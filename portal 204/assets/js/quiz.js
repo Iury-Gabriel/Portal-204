@@ -63,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    document.querySelector(".btnConfirmar").addEventListener('click', avancarQuiz);
+
+    function avancarQuiz() {
+        carregarQuestao();
+    }
+
     function opcaoSelecionada(e) {
         let opcao = parseInt(e.target.getAttribute("data-op"));
         if(questions[questaoAtual].answer == opcao) {
@@ -70,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         questaoAtual++;
-        carregarQuestao();
     }
 
     function finishQuiz() {
