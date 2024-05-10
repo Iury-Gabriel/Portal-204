@@ -47,8 +47,19 @@
         <div class="barraDeProgresso"></div>
     </div>
 
-    <h1 class="titleQuestion">Questão 1</h1>
-    <h2 class="subTitleQuestion">Matematica</h2>
+    <div class="quizName">
+        <h1>Quiz</h1>
+        <h2>Digite seu nome para iniciar o Quiz</h2>
+
+        <input type="text" name="name" id="name" placeholder="Digite seu nome">
+
+        <button id="start">Iniciar</button>
+    </div>
+
+    <div style="display: none;" class="questionHeader">
+        <h1 class="titleQuestion">Questão 1</h1>
+        <h2 class="subTitleQuestion">Fundamentos Web</h2>
+    </div>
 
     <div class="quizArea">
         <div class="containerQuestao">
@@ -61,6 +72,12 @@
             <div class="scorePct">Acertou 99%</div>
             <div class="scoreText2">Tente novamente</div>
             <button class="btnReiniciar">Reiniciar</button>
+
+            <button class="btnVerRanking">Ver Ranking</button>
+
+            <div class="resultArea">
+
+            </div>
         </div>
     </div>
 

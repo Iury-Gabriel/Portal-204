@@ -121,6 +121,42 @@ body {
 
 /* Fim Header */
 
+.quizName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizName h1, h2 {
+    text-align: center;
+}
+
+.quizName input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.quizName button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: #317FB6;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.quizName button:hover {
+    opacity: 0.5;
+}
+
 .quizArea {
     margin-top: 30px;
     display: flex;
@@ -191,6 +227,21 @@ body {
     cursor: pointer;
 }
 
+.btnVerRanking {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: #317FB6;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .correta {
     background-color: #0d630d;
 }
@@ -219,6 +270,9 @@ body {
     border-radius: 20px;
     margin: 10px;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .scoreText1{
     color: black;
@@ -237,6 +291,37 @@ body {
     font-size: 16px;
     margin-bottom: 10px;  
 }
+
+.rankingItem {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rankingPosition {
+    flex: 0 0 50px; /* Largura fixa para a posição no ranking */
+    font-weight: bold;
+    text-align: center; /* Centraliza horizontalmente o texto */
+}
+
+.rankingName {
+    flex: 3; /* Ocupa mais espaço */
+    min-width: 150px; /* Largura mínima para garantir espaço suficiente */
+    margin-left: 10px; /* Espaço entre o nome e a pontuação */
+}
+
+.rankingScore {
+    flex: 1; /* Ocupa mais espaço */
+    min-width: 80px; /* Largura mínima para garantir espaço suficiente */
+    text-align: center; /* Centraliza horizontalmente o texto */
+    font-weight: bold;
+    color: #007bff; /* Cor da pontuação */
+}
+
 
 .btnConfirmar{
     border: 0;
