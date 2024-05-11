@@ -106,6 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let score;
         if (points === 100) {
             score = parseInt(points.toString().substring(0, 2));
+        } else if(points === 0) {
+            score = 1;
         } else {
             score = parseInt(points.toString().charAt(0));
         }
