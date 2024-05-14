@@ -290,7 +290,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.painelQuiz h3 {
+    text-align: center;
 }
 
 .h1Quiz {

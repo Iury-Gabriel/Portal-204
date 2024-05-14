@@ -1,95 +1,52 @@
 let questions = [
     {
-        question: '(Enem/2018) Em Beirute, no Líbano, quando perguntado sobre onde se encontram os refugiados sírios, a resposta do homem é imediata: “em todos os lugares e em lugar nenhum”. Andando ao acaso, não é raro ver, sob um prédio ou num canto de calçada, ao abrigo do vento, uma família refugiada em volta de uma refeição frugal posta sobre jornais como se fossem guardanapos. Também se vê de vez em quando uma tenda com a sigla ACNUR (Alto Comissariado das Nações Unidas para Refugiados), erguida em um dos raros terrenos vagos da capital.',
-        options: [
-            'migração massiva de pessoas atingidas por catástrofe natural.',
-            'hibridização cultural de grupos caracterizados por homogeneidade social.',
-            'desmobilização voluntária de militantes cooptados por seitas extremistas.',
-            'desmobilização voluntária de militantes cooptados por seitas extremistas.'
-        ],
-        answer: 1
+        question: 'Qual elemento HTML é usado para definir uma lista ordenada?',
+        options: ['&lt;ul&gt;', '&lt;ol&gt;', '&lt;li&gt;', '&lt;list&gt;'],
+        answer: 1 // A resposta correta é a opção B (segunda opção do array)
     },
     {
-        question: 'Onde é o local certo de colocar o javascript?',
-        options: [
-            'Na tag body',
-            'Na tag head',
-            'Tanto na tag body quanto a head estão corretas'
-        ],
-        answer: 2
+        question: 'Qual atributo HTML é usado para definir um hiperlink?',
+        options: ['link', 'src', 'href', 'ref'],
+        answer: 2 // A resposta correta é a opção C (terceira opção do array)
     },
     {
-        question: 'Qual a sintaxe correta para adicionar um arquivo javascript externo na tag script?',
-        options: [
-            'name="xxx.js"',
-            'src="xxx.js"',
-            'href="xxx.js"'
-        ],
-        answer: 1
+        question: 'Qual elemento HTML é usado para criar um parágrafo?',
+        options: ['&lt;p&gt;', '&lt;paragraph&gt;', '&lt;para&gt;', '&lt;par&gt;'],
+        answer: 0 // A resposta correta é a opção A (primeira opção do array)
     },
     {
-        question: 'Um arquivo javascript externo precisa ter a tag script',
-        options: [
-            'Verdade',
-            'Falso'
-        ],
-        answer: 1
+        question: 'Qual elemento HTML é usado para definir a estrutura básica de uma página web?',
+        options: ['&lt;body&gt;', '&lt;header&gt;', '&lt;html&gt;', '&lt;meta&gt;'],
+        answer: 2 // A resposta correta é a opção C (terceira opção do array)
     },
     {
-        question: 'Como escrever um "Olá Mundo" em um alertbox?',
-        options: [
-            'alertBox("Olá Mundo")',
-            'msgBox("Olá Mundo")',
-            'msg("Olá Mundo")',
-            'alert("Olá Mundo")'
-        ],
-        answer: 3
+        question: 'Qual atributo HTML é usado para definir o texto alternativo para uma imagem?',
+        options: ['alt', 'title', 'src', 'img'],
+        answer: 0 // A resposta correta é a opção A (primeira opção do array)
     },
     {
-        question: 'Como você cria uma função no Javascript?',
-        options: [
-            'function:minhaFuncao()',
-            'function = minhaFuncao()',
-            'function minhaFuncao()'
-        ],
-        answer: 2
+        question: 'Qual elemento HTML é usado para criar um link interno em uma página web?',
+        options: ['&lt;href&gt;', '&lt;link&gt;', '&lt;a&gt;', '&lt;anchor&gt;'],
+        answer: 2 // A resposta correta é a opção C (terceira opção do array)
     },
     {
-        question: 'Como chamar uma função chamada "minhaFuncao"?',
-        options: [
-            'call minhaFuncao',
-            'call function minhaFuncao',
-            'minhaFuncao()'
-        ],
-        answer: 2
+        question: 'Qual atributo HTML é usado para definir estilos em linha?',
+        options: ['class', 'style', 'id', 'inline'],
+        answer: 1 // A resposta correta é a opção B (segunda opção do array)
     },
     {
-        question: 'Como escrever uma condicional IF no Javascript?',
-        options: [
-            'if i = 5',
-            'if i == 5 then',
-            'if (i == 5)',
-            'if i = 5 then'
-        ],
-        answer: 2
+        question: 'Qual elemento HTML é usado para criar uma tabela?',
+        options: ['&lt;table&gt;', '&lt;grid&gt;', '&lt;tab&gt;', '&lt;tbl&gt;'],
+        answer: 0 // A resposta correta é a opção A (primeira opção do array)
     },
     {
-        question: 'Como fazer um if que executa um código caso "i" for diferente de 5',
-        options: [
-            'if (i != 5)',
-            'if (i <> 5)',
-            'if i <> 5',
-            'if i =! 5 then'
-        ],
-        answer: 0
+        question: 'Qual atributo HTML é usado para definir o título de uma página?',
+        options: ['&lt;title&gt;', '&lt;head&gt;', '&lt;meta&gt;', '&lt;h1&gt;'],
+        answer: 0 // A resposta correta é a opção A (primeira opção do array)
     },
     {
-        question: 'Como o loop while começa?',
-        options: [
-            'while (i <= 10)',
-            'while (i <= 10; i++)',
-            'while i = 1 to 10'
-        ],
-        answer: 0
-    },
+        question: 'Qual elemento HTML é usado para definir o cabeçalho de um documento ou seção?',
+        options: ['&lt;section&gt;', '&lt;header&gt;', '&lt;head&gt;', '&lt;h1&gt;'],
+        answer: 2 // A resposta correta é a opção C (segunda opção do array)
+    }
 ];
